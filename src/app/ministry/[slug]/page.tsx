@@ -20,13 +20,13 @@ const ministryData: Record<string, {
 }> = {
   "data-ministry": {
     name: "Data Ministry",
-    description: "Divisi Data Ministry bertanggung jawab atas pengelolaan, pencatatan, dan pemeliharaan seluruh data jemaat gereja GMS. Kami memastikan setiap informasi tercatat dengan akurat dan terstruktur.",
-    vision: "Menjadi pusat data yang andal dan terpercaya untuk mendukung seluruh pelayanan gereja GMS.",
-    mission: ["Mengelola data jemaat secara akurat dan up-to-date","Menyediakan laporan pelayanan yang komprehensif","Memastikan keamanan dan kerahasiaan data jemaat","Mendukung pengambilan keputusan berbasis data"],
+    description: "Deskripsi DM",
+    vision: "visi nya adalah",
+    mission: ["misi 1","misi2","misi 3"],
     color: "#FFFFFF", colorLight: "rgba(255,255,255,0.06)", colorBorder: "rgba(255,255,255,0.15)",
     tag: "Data & Admin",
     members: [{ name: "Koordinator Data", role: "Ketua Divisi" },{ name: "Admin Data 1", role: "Input Data" },{ name: "Admin Data 2", role: "Verifikasi Data" }],
-    sops: [{ title: "SOP Input Data Jemaat", desc: "Panduan lengkap memasukkan data jemaat baru ke dalam sistem", link: "https://www.google.com" },{ title: "SOP Update Data Jemaat", desc: "Prosedur memperbarui informasi jemaat yang sudah ada", link: "https://www.google.com" },{ title: "SOP Laporan Mingguan", desc: "Cara membuat laporan data jemaat setiap minggu", link: "https://www.google.com" },{ title: "SOP Backup Data", desc: "Prosedur backup dan pemeliharaan data secara berkala", link: "https://www.google.com" }],
+    sops: [{ title: "Tally Counter V2", desc: "panduan cara penggunaan tally counter V2", link: "https://drive.google.com/file/d/1uhvJSCOKH1NeQLURWuYuP4X8d9TcRoLN/view?t=3.032" },{ title: "Stroller", desc: "Penggunaan Apps Stroller", link: "https://drive.google.com/file/d/1I2fPzvzgUblxZb0wWbUw9_ueGgbBCiT_/view?t=2.444" }],
     icon: "data",
   },
   "crowd-ministry": {
@@ -140,8 +140,8 @@ function MinistryContent() {
           Kembali
         </button>
         <div className={styles.navBrand}>
-          <Image src="/gms-logo-badge.png" alt="GMS Church" width={42} height={42} className={styles.navLogo} />
-          <div className={styles.navTitle}>Crowd Ministry · GMS</div>
+          {/* <Image src="/gms-logo-badge.png" alt="GMS Church" width={42} height={42} className={styles.navLogo} /> */}
+          <div className={styles.navTitle}>Crowd Management JJB · GMS</div>
         </div>
         <div style={{ width:"100px" }} />
       </nav>
@@ -151,7 +151,7 @@ function MinistryContent() {
         <div className={styles.heroGoldLine} />
         <div className={styles.heroContent}>
           <div className={styles.heroLeft}>
-            <div className={styles.heroBadge}>{ministry.tag}</div>
+            {/* <div className={styles.heroBadge}>{ministry.tag}</div> */}
             <h1 className={styles.heroTitle}>{ministry.name}</h1>
             <p className={styles.heroDesc}>{ministry.description}</p>
           </div>
@@ -192,12 +192,12 @@ function MinistryContent() {
               </div>
             </div>
 
-            <div className={styles.section}>
+            {/* <div className={styles.section}>
               <div className={styles.sectionHead}>
                 <div className={styles.sectionDot}/>
                 <h2 className={styles.sectionTitle}>Anggota Tim</h2>
-              </div>
-              <div className={styles.membersList}>
+              </div> */}
+              {/* <div className={styles.membersList}>
                 {ministry.members.map((mem, i) => (
                   <div key={i} className={styles.memberCard}>
                     <div className={styles.memberAvatar}>{mem.name.charAt(0)}</div>
@@ -207,8 +207,8 @@ function MinistryContent() {
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
 
           {/* Right - SOPs */}

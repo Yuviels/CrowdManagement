@@ -36,33 +36,33 @@ export default function LoginPage() {
       <div className={styles.loginWrapper}>
         {/* Logo GMS */}
         <div className={styles.logoSection}>
-          <div className={styles.logoImgWrapper}>
-            <Image
+          {/* <div className={styles.logoImgWrapper}> */}
+          {/* <Image
               src="/gms-logo-badge.png"
               alt="GMS Church Emblem"
               width={140}
               height={140}
               className={styles.logoImg}
               priority
-            />
-          </div>
+            /> */}
+          {/* </div> */}
           <h1 className={styles.churchTitle}>GMS CHURCH</h1>
-          <p className={styles.logoSubtitle}>Crowd Ministry Portal</p>
+          <p className={styles.logoSubtitle}>Crowd Management</p>
           <div className={styles.logoDivider} />
         </div>
 
         <div className={styles.card}>
-          <div className={styles.cardHeader}>
-            <div className={styles.cardIcon}>
+          {/* <div className={styles.cardHeader}> */}
+          {/* <div className={styles.cardIcon}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="22" height="22">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
-            </div>
-            <div>
+            </div> */}
+          {/* <div>
               <h2 className={styles.cardTitle}>Selamat Datang</h2>
               <p className={styles.cardDesc}>Masuk ke portal pelayanan GMS</p>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
 
           <form onSubmit={handleLogin} className={styles.form}>
             <div className={styles.fieldGroup}>
@@ -70,8 +70,8 @@ export default function LoginPage() {
               <div className={styles.inputWrapper}>
                 <span className={styles.inputIcon}>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" width="17" height="17">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                    <circle cx="12" cy="7" r="4"/>
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
                   </svg>
                 </span>
                 <input
@@ -91,8 +91,8 @@ export default function LoginPage() {
               <div className={styles.inputWrapper}>
                 <span className={styles.inputIcon}>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" width="17" height="17">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                   </svg>
                 </span>
                 <input
@@ -115,9 +115,9 @@ export default function LoginPage() {
               ) : (
                 <>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" width="17" height="17">
-                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
-                    <polyline points="10 17 15 12 10 7"/>
-                    <line x1="15" y1="12" x2="3" y2="12"/>
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                    <polyline points="10 17 15 12 10 7" />
+                    <line x1="15" y1="12" x2="3" y2="12" />
                   </svg>
                   Masuk
                 </>
@@ -125,7 +125,7 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <p className={styles.hint}>Gunakan username dan password apapun untuk masuk</p>
+          {/* <p className={styles.hint}>Gunakan username dan password apapun untuk masuk</p> */}
         </div>
       </div>
     </div>
